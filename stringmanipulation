@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Xml.Linq;
+
+namespace ConsoleApp2
+{
+    
+    internal class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            string message=System.String.Empty;
+
+            char[] letters = { 'a', 'b', 'c' };
+            string alphabet = new string(letters);
+
+            string s1 = "A string is more ";
+            string s2 = "than the sum of its chars";
+            s1 += s2;
+            Console.WriteLine(s1);
+
+            string st1 = "Hello ";
+            string st2 = st1;
+            st1 += "World";
+
+            System.Console.WriteLine(st2);
+            string upstring = s1.ToUpper();
+            string lwstring = s1.ToLower();
+
+            
+            string concatedstring = string.Concat("hellow", " ", "World!");
+            string substring = s1.Substring(4, 8);
+            Console.WriteLine(substring);
+
+
+            
+        }
+
+
+    }
+}
+
+

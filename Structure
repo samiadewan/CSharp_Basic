@@ -1,0 +1,34 @@
+using System;
+
+namespace Structure
+{
+    public class Program
+    {
+       
+        public static void Main()
+        {
+            Coordinat point = new Coordinat(1,1);
+            point.Move(1,1);
+            Console.WriteLine(point.X);
+            Console.WriteLine(point.Y);
+        }
+    }
+struct Coordinat
+{
+    public int X;
+    public int Y;
+
+    public Coordinat(int x, int y)
+    {
+        X = x;
+        Y = y;
+    }
+
+    public void Move(int deltaX, int deltaY)
+    {
+        X += deltaX;
+        Y += deltaY;
+    }
+}
+
+}

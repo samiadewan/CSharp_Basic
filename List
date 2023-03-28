@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Xml.Linq;
+
+namespace ConsoleApp2
+{
+    
+    internal class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            List<string> list1 = new List<string>();
+           
+
+            list1.Add("rafi");
+            list1.Add("kafi");
+            list1.Add("zafi");
+            list1.Add("nabi");
+            list1.Add("rabi");
+            /*foreach (var item in list1)
+            {
+                Console.WriteLine(item);
+            }*/
+            Console.WriteLine("\nCount: {0}",list1.Count);
+            Console.WriteLine("\nCapacity: {0}",list1.Capacity);
+            list1.Clear();
+
+            List<int> list2 = new List<int> { 1, 2,5, 3, 4};
+            list2.Remove(3);
+            list2.Sort();
+            foreach (var item in list2)
+            { 
+                Console.WriteLine(item);
+                
+            }
+
+            List<double> list3 = new List<double> { 1.230, 2.101,3.01,4.04};
+            
+            foreach (var item in list3)
+            {
+                Console.WriteLine(item);
+
+            }
+            int idx = list3.IndexOf(3.01);
+            if (idx>0)
+            {
+                Console.WriteLine($"Item index in List is: {idx}");
+
+            }
+            else
+            {
+                Console.WriteLine("Item not found");
+            }
+
+
+        }
+       
+
+
+    }
+}
+
+

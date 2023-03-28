@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Xml.Linq;
+
+namespace ConsoleApp2
+{
+    
+    internal class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            string myString = "Trainee  samia.";
+            StringBuilder stringBuilder = new StringBuilder(myString);
+            stringBuilder[9] = 'S';
+
+            stringBuilder.Remove(0, 7).Insert(0, "I am");
+            string anotherString = stringBuilder.ToString();
+            Console.WriteLine(anotherString);
+
+
+
+        }
+
+
+    }
+}
+
+

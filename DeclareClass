@@ -1,0 +1,25 @@
+namespace DeclareClass
+{
+    internal class Program
+    {
+        public class Person
+        {
+            public string Name { get; set; }
+
+            public void Introduction()
+            {
+                Console.WriteLine("My name is samia.");
+            }
+        }
+        static void Main(string[] args)
+        {
+            var person = new Person() { Name = "Samia" };
+            //person.Name = "Samia";
+            Console.WriteLine(person.Name);
+            person.Introduction();
+        }
+        
+       
+    }
+    
+}

@@ -1,0 +1,21 @@
+using System;
+
+namespace Structure
+{
+    class Program
+    {
+        
+        public static void Main()
+        {
+            int [] array = new int[15];
+            long [] array1 = new long[15];
+            string[] array2 = new string[15];
+            double[] array3 = new double[15];
+            bool[] array4 = new bool[15];
+            char[] array5 = new char[15];
+           
+            
+        }
+
+    }
+}

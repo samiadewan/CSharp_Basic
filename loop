@@ -1,0 +1,57 @@
+namespace Loop
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {   //For Loop
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i == 95)
+                {
+                    continue;
+                }
+                if (i == 99)
+                {
+                    break;
+                }
+                Console.WriteLine(i);
+
+            }
+
+            //While
+            var limit1 = 1;
+            while (limit1 < 100)
+            {
+
+                if (limit1 == 95)
+                {
+                    limit1++; continue;
+                }
+                if (limit1 == 99)
+                {
+                    break;
+                }
+                Console.WriteLine(limit1);
+                limit1++;
+            }
+
+            var limit2 = 1;
+            
+            //do-while
+            do
+            {
+                if (limit2 == 95)
+                {
+                    limit2++; continue;
+                }
+                if (limit2 == 99)
+                {
+                    break;
+                }
+                Console.WriteLine(limit2);
+                limit2++;
+
+            } while (limit2 < 100);
+        }
+    }
+}

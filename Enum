@@ -1,0 +1,29 @@
+namespace Enum
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+            Month month = (Month)Enum.Parse(typeof(Month), "July");
+            Console.WriteLine(month);
+            //int value = 1;
+            //Month myEnum = (Month)Enum.Parse(typeof(Month), value.ToString());
+            //Console.WriteLine(myEnum);
+        }
+        public enum Month
+        {
+            January,
+            February,
+            March,
+            April,
+            June,
+            July,
+            August
+        }
+
+        
+    }
+}
+
+

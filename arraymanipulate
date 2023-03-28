@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Xml.Linq;
+
+namespace ConsoleApp2
+{
+    
+    internal class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            int[] array1 = { 1, 2, 3,5 ,6 };
+            int lengthOfArray1 = array1.Length;
+            Console.WriteLine(lengthOfArray1);
+            Array.Reverse(array1);
+            foreach (int i in array1) Console.WriteLine(i);
+            int[,] theArray = new int[5, 10];
+            System.Console.WriteLine("The array has {0} dimensions.", theArray.Rank);
+            string[] array2 = { "dog", "cat", "animal" };
+            
+           
+            double[] array3 = { 4.101, 3.104, 4.106 };
+            array3[1] = 5.11;
+            foreach (double i in array3)
+            {
+                Console.WriteLine(i);
+            }
+
+            Array.Clear(array1, 0, lengthOfArray1);
+
+        }
+       
+
+
+    }
+}
+
+

@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Xml.Linq;
+
+namespace ConsoleApp2
+{
+    
+    internal class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            var sbuilder= new StringBuilder();
+            sbuilder
+                .Append('.', 10)
+                .AppendLine()
+                .Append("Builder")
+                .AppendLine()
+                .Replace('.', '+')
+                .Remove(0, 10)
+                .Insert(0, new string('.', 10))
+
+            Console.WriteLine(sbuilder);
+            Console.WriteLine("First Char: " + sbuilder[1]);
+
+
+        }
+
+
+    }
+}
+
+
